@@ -4,7 +4,7 @@ Web estática para el repositorio `dr4kull/IA-en-tu-PC`.
 
 ## Versiones publicadas en la web
 
-- **Voice Studio 2.0 RC2**: etiqueta `voice-studio-v2.0-rc2`; archivo `IA_en_tu_PC_Voice_Studio_v2_0_RC2_ECO_Y_TEXTO_LARGO.zip`. Motor Chatterbox es-ES, guiones largos y reducción de eco opcional.
+- **Voice Studio 2.0 RC2**: etiqueta `voice-studio-v2.0-rc2`; archivo `IA_en_tu_PC_Voice_Studio_v2_0_RC2.zip`. Motor Chatterbox es-ES, guiones largos y reducción de eco opcional.
 - **MuseTalk Studio 1.6.14 BETA**: etiqueta `musetalk-studio-v1.6.14`; archivo `MuseTalk_Studio_v1.6.14_COMPLETO_BETA.zip`.
 
 ## Cómo publicar
@@ -17,7 +17,7 @@ Web estática para el repositorio `dr4kull/IA-en-tu-PC`.
 
 La descarga directa de Voice Studio RC2 configurada en la web es:
 
-https://github.com/dr4kull/IA-en-tu-PC/releases/download/voice-studio-v2.0-rc2/IA_en_tu_PC_Voice_Studio_v2_0_RC2_ECO_Y_TEXTO_LARGO.zip
+https://github.com/dr4kull/IA-en-tu-PC/releases/download/voice-studio-v2.0-rc2/IA_en_tu_PC_Voice_Studio_v2_0_RC2.zip
 
 **Nota:** si has cambiado el nombre del ZIP adjuntado a GitHub Releases o su etiqueta, actualiza la URL en `index.html`, `descargas.html`, `instalacion-completa.html` y `versiones.html`.
 
