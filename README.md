@@ -1,34 +1,28 @@
 # IA en tu PC — web para GitHub Pages
 
-Web estática responsive del proyecto **IA en tu PC**, preparada para publicar en la raíz del repositorio **`IA-en-tu-PC`**.
+Web estática para el repositorio `dr4kull/IA-en-tu-PC`.
 
-## Archivos
+## Versiones publicadas en la web
 
-- `index.html`: portada.
-- `descargas.html`: fichas y descarga de las apps.
-- `instalacion-completa.html`: guía actualizada para los instaladores automáticos.
-- `requisitos.html`: requisitos y licencias.
-- `versiones.html`: versiones BETA y hashes SHA-256.
-- `styles.css`, `logo.png`, `.nojekyll`: apariencia y recursos.
-- `SHA256SUMS.txt`: comprobación de integridad de los dos ZIP.
+- **Voice Studio 2.0 RC2**: etiqueta `voice-studio-v2.0-rc2`; archivo `IA_en_tu_PC_Voice_Studio_v2_0_RC2_ECO_Y_TEXTO_LARGO.zip`. Motor Chatterbox es-ES, guiones largos y reducción de eco opcional.
+- **MuseTalk Studio 1.6.14 BETA**: etiqueta `musetalk-studio-v1.6.14`; archivo `MuseTalk_Studio_v1.6.14_COMPLETO_BETA.zip`.
 
-## Datos de publicación
+## Cómo publicar
 
-- Cuenta GitHub vinculada: `dsataciertocom`.
-- Repositorio previsto: `https://github.com/dsataciertocom/IA-en-tu-PC` (**debe existir primero**).
-- URL prevista de GitHub Pages: `https://dsataciertocom.github.io/IA-en-tu-PC/` (**no está publicada todavía**).
-- Releases/archivos: ver `../02_ZIPS_SUBIR_A_RELEASES` dentro del kit.
-- Etiqueta Voice: `voice-studio-v1.6.8`; fichero: `IA_en_tu_PC_Voice_Studio_v1_6_8_PRUEBA_FINAL.zip`.
-- Etiqueta MuseTalk: `musetalk-studio-v1.6.14`; fichero: `MuseTalk_Studio_v1.6.14_COMPLETO_BETA.zip`.
+1. Comprueba que ambas versiones existan en GitHub Releases y que cada ZIP tenga el mismo nombre que el enlace de `descargas.html`.
+2. Sube **todos los archivos de este ZIP a la raíz del repositorio**, no el ZIP entero ni su carpeta contenedora.
+3. Confirma los cambios en la rama utilizada por GitHub Pages (normalmente `main`).
+4. Abre la web, pulsa Descargar en ambas aplicaciones y confirma que los archivos se descargan.
+5. Comprueba las huellas SHA-256 de los ZIP en `SHA256SUMS.txt` y `versiones.html`.
 
-Los botones enlazan a las URL exactas de GitHub Releases. **Hasta que subas ambos ZIP a esas etiquetas, las descargas devolverán 404**. Publica primero las releases, después la web. Si el repositorio termina en otra cuenta o nombre, sustituye `dsataciertocom/IA-en-tu-PC` en los archivos HTML.
+La descarga directa de Voice Studio RC2 configurada en la web es:
 
-## Publicar
+https://github.com/dr4kull/IA-en-tu-PC/releases/download/voice-studio-v2.0-rc2/IA_en_tu_PC_Voice_Studio_v2_0_RC2_ECO_Y_TEXTO_LARGO.zip
 
-1. Crea (o abre) un repositorio público llamado `IA-en-tu-PC` en GitHub.
-2. Sube **el contenido de esta carpeta** a la raíz de `main`, no la carpeta completa ni el ZIP.
-3. Crea los dos releases y adjunta el ZIP exacto indicado en cada etiqueta (puedes hacer las releases antes que la web).
-4. En **Settings → Pages → Source → Deploy from a branch → main → /(root) → Save**.
-5. Revisa `index.html`, `descargas.html` y prueba ambos botones de descarga una vez publicadas las releases.
+**Nota:** si has cambiado el nombre del ZIP adjuntado a GitHub Releases o su etiqueta, actualiza la URL en `index.html`, `descargas.html`, `instalacion-completa.html` y `versiones.html`.
 
-No incluyas motores, venv, modelos de IA ni vídeos privados en el repositorio. Revisa los términos de uso de los modelos (F5-Spanish es CC BY-NC 4.0) y los ficheros de licencias dentro de cada ZIP.
+## Dependencias
+
+Voice Studio RC2 requiere Python 3.11, Git y una NVIDIA compatible con CUDA en el instalador actual. Los modelos y bibliotecas se descargan durante la instalación/primer uso. No subas los entornos virtuales, modelos, grabaciones privadas ni archivos de vídeo al repositorio.
+
+Documenta las licencias de cada componente externo, incluidas las del motor Chatterbox y su modelo español es-ES. El ZIP del programa todavía contiene un archivo de instrucciones heredado de RC1: actualízalo antes de publicarlo como versión estable.
