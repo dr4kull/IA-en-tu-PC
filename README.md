@@ -1,28 +1,26 @@
 # IA en tu PC — web para GitHub Pages
 
-Web estática para el repositorio `dr4kull/IA-en-tu-PC`.
+Web estatica para `dr4kull/IA-en-tu-PC`, adaptada a los instaladores corregidos el 24/11/2026.
 
-## Versiones publicadas en la web
+## Versiones que deben estar publicadas ANTES de subir esta web
 
-- **Voice Studio 2.0 RC2**: etiqueta `voice-studio-v2.0-rc2`; archivo `IA_en_tu_PC_Voice_Studio_v2_0_RC2.zip`. Motor Chatterbox es-ES, guiones largos y reducción de eco opcional.
-- **MuseTalk Studio 1.6.14 BETA**: etiqueta `musetalk-studio-v1.6.14`; archivo `MuseTalk_Studio_v1.6.14_COMPLETO_BETA.zip`.
+1. **Voice Studio RC2 — Auto + Admin**: etiqueta `voice-studio-v2.0-rc2-auto-admin` y archivo `Voice_Studio_RC2_AUTO_AVISO_ADMIN_PRUEBA.zip`.
+2. **MuseTalk Studio 1.6.14 — Ruta corta**: etiqueta `musetalk-studio-v1.6.14-ruta-corta` y archivo `IA_en_tu_PC_MuseTalk_v1.6.14_RUTA_CORTA_ADMIN_BETA.zip`.
+
+Los botones enlazan directamente a esas etiquetas y nombres EXACTOS. Si aún no has publicado ambas releases, la web dará error 404.
 
 ## Cómo publicar
 
-1. Comprueba que ambas versiones existan en GitHub Releases y que cada ZIP tenga el mismo nombre que el enlace de `descargas.html`.
-2. Sube **todos los archivos de este ZIP a la raíz del repositorio**, no el ZIP entero ni su carpeta contenedora.
-3. Confirma los cambios en la rama utilizada por GitHub Pages (normalmente `main`).
-4. Abre la web, pulsa Descargar en ambas aplicaciones y confirma que los archivos se descargan.
-5. Comprueba las huellas SHA-256 de los ZIP en `SHA256SUMS.txt` y `versiones.html`.
+1. Crea las dos releases en GitHub con las etiquetas exactas anteriores y sube los ZIP corregidos.
+2. Comprueba los enlaces de `descargas.html` y los SHA-256 en `versiones.html`.
+3. Sube los archivos de este ZIP **a la raiz del repositorio**, NO el ZIP entero.
+4. Confirma los cambios en `main` y espera a que se actualice GitHub Pages.
+5. Abre la web pública y verifica ambas descargas e instrucciones.
 
-La descarga directa de Voice Studio RC2 configurada en la web es:
+**IMPORTANTE:** la opción «Ejecutar como administrador» NO elimina las alertas de SmartScreen ni convierte un archivo desconocido en confiable. No desactives las protecciones de Windows.
 
-https://github.com/dr4kull/IA-en-tu-PC/releases/download/voice-studio-v2.0-rc2/IA_en_tu_PC_Voice_Studio_v2_0_RC2.zip
+## Dependencias y licencias
 
-**Nota:** si has cambiado el nombre del ZIP adjuntado a GitHub Releases o su etiqueta, actualiza la URL en `index.html`, `descargas.html`, `instalacion-completa.html` y `versiones.html`.
+Voice Studio descarga automaticamente Python 3.11, Git portatil, PyTorch y modelos de voz. MuseTalk prepara Python 3.10, PyTorch, MuseTalk y modelos en `%LOCALAPPDATA%\IA_PC_MT` para evitar rutas largas de MMPose. Se requiere una NVIDIA compatible con CUDA para estas ediciones.
 
-## Dependencias
-
-Voice Studio RC2 requiere Python 3.11, Git y una NVIDIA compatible con CUDA en el instalador actual. Los modelos y bibliotecas se descargan durante la instalación/primer uso. No subas los entornos virtuales, modelos, grabaciones privadas ni archivos de vídeo al repositorio.
-
-Documenta las licencias de cada componente externo, incluidas las del motor Chatterbox y su modelo español es-ES. El ZIP del programa todavía contiene un archivo de instrucciones heredado de RC1: actualízalo antes de publicarlo como versión estable.
+Revisa las licencias de los componentes de terceros y no subas modelos, entornos virtuales, archivos de audio ni otros datos privados al repositorio.
