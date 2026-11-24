@@ -4,8 +4,8 @@ Web estatica para `dr4kull/IA-en-tu-PC`, adaptada a los instaladores corregidos 
 
 ## Versiones que deben estar publicadas ANTES de subir esta web
 
-1. **Voice Studio RC2 — Auto + Admin**: etiqueta `voice-studio-v2.0-rc2-auto-admin` y archivo `Voice_Studio_RC2_AUTO_AVISO_ADMIN_PRUEBA.zip`.
-2. **MuseTalk Studio 1.6.14 — Ruta corta**: etiqueta `musetalk-studio-v1.6.14-ruta-corta` y archivo `IA_en_tu_PC_MuseTalk_v1.6.14_RUTA_CORTA_ADMIN_BETA.zip`.
+1. **Voice Studio RC2 — Auto + Admin**: etiqueta `voice-studio-v2.0-rc2` y archivo `VoiceStudio_2.0_RC2.zip`.
+2. **MuseTalk Studio 1.6.14 — Ruta corta**: etiqueta `musetalk-studio-v1.6.14` y archivo `MuseTalkStudio_1.6.14.zip`.
 
 Los botones enlazan directamente a esas etiquetas y nombres EXACTOS. Si aún no has publicado ambas releases, la web dará error 404.
 
